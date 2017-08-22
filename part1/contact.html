@@ -57,28 +57,31 @@
 		
 		<section>
 			<h2 class="contactHead">Contact</h2>
-			
 
-		<form class="user">
-		Name:<br>
-		<input type="text" placeholder="Your Name" style="width: 590px"><br>
-		</form>
+			<form action="mail.php" method="POST">
+				<b>Your Email</b><br>
+				<input type="text" name="youremail" size=40>
+				<p><b>Subject</b><br>
+					<input type="text" name="subject" size=40>
+				<p><b>Message</b><br>
+					<textarea cols=40 rows=10 name="message"></textarea>
+				<p><input type="submit" value=" Send ">
+			</form>
 
-		<form class="user">
-		Email:<br>
-		<input type="text" placeholder="example@gmail.com" style="width: 590px"><br>
-		</form>
+		<!--<form class="user" action="contact.php" method="POST">-->
+			<!--Email:<br>-->
+			<!--<input type="text" name="emal" placeholder="example@gmail.com" style="width: 590px"><br>-->
 
-		<form class="message">
-		Message:<br>
-		<input type="text" style="width: 590px; height: 300px"><br>
-		</input>
+			<!--Message:<br>-->
+			<!--<textarea cols=40 rows=10 name="message"></textarea>-->
+			<!--<input type="text" name="message" style="width: 590px; height: 300px"><br>-->
+		<!--</form>-->
 
-		<!--Submit button-->
-		<div class=contactSubmit>
-		<a class="btn btn-primary btn-lg" href="jpemberton76@gmail.com" role="button">Submit»</a>
-		</div>
-	
+		<!--&lt;!&ndash;Submit button&ndash;&gt;-->
+		<!--<div class=contactSubmit>-->
+		<!--<a class="btn btn-primary btn-lg" href="jpemberton76@gmail.com" role="button">Submit»</a>-->
+		<!--</div>-->
+	<!---->
 		</section>
 		</div><!--end container-->
 	</div><!--end jumbotron-->
